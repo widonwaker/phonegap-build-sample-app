@@ -120,6 +120,5 @@ function onPushwooshAndroidInitialized(pushToken)
 		}
 	);
 
-	//Pushwoosh Android specific method that cares for the battery
-	//pushNotification.startGeoPushes();
+	pushNotification.startBeaconPushes();  
 }

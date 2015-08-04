@@ -57,7 +57,11 @@
     <gap:plugin name="org.apache.cordova.vibration" />
 
     <!-- Pushwoosh plugin -->
-    <gap:plugin name="pushwoosh-cordova-plugin" source="npm" />
+    <gap:plugin name="pushwoosh-beacons-cordova-plugin" source="npm" />    
+
+    <gap:config-file platform="ios" parent="NSLocationAlwaysUsageDescription">
+        <string>This demo uses location services for Pushwoosh Geozones and Beacons</string>
+    </gap:config-file>
 
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
